@@ -1,0 +1,249 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Gaming Blog</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Google Fonts -->
+<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+			});				
+		
+		},
+		
+		hoverEffect: function () {
+		
+			// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+	
+});	
+</script>
+<link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbG-smMM6rf45qrb-uKXkokkSQPAeEhCYhSg&usqp=CAU">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- Header Starts Here -->
+<div class="header">
+	<div class="container">
+		<div class="logo">
+			<a href="index.html"><img src="images/lo(1).png" alt=""></a>
+		</div>
+		<span class="menu"></span>
+		<div class="navigation">
+			<ul class="navig cl-effect-3" >
+				<li><a href="index.html">Home</a></li>
+				<li><a href="games.html">Games</a></li>	
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<div class="search-bar">
+					<input type="text" placeholder="Search" required="" />
+					<input type="submit" value="" />
+			</div>
+			<div class="clearfix"></div>
+			<script>
+				$( "span.menu" ).click(function() {
+				  $( ".navigation" ).slideToggle( "slow", function() {
+				    // Animation complete.
+				  });
+				});
+			</script>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="banner"></div>
+<!-- Header Ends Here -->	
+<div class="banner-bot">
+	<div class="container-fluid">
+		<h2>Hello!</h2>
+		<p>"Welcome to our Assassin's Creed Hub! Dive into the immersive world of the legendary Assassin's Creed franchise through our dedicated website. Discover the latest news, trailers, gameplay insights, and behind-the-scenes details about this iconic action-adventure series. Explore the rich historical settings, engaging narratives, and thrilling gameplay that have captivated millions of gamers worldwide. Uncover hidden secrets, master stealthy combat techniques, and relive the epic moments from Assassin's Creed's vast universe. Join our community of passionate fans as we celebrate the Assassin's Creed legacy and embark on a journey through history, intrigue, and breathtaking action."</p>
+		
+	</div>
+</div>
+<!-- Gallery Starts Here -->
+<div class="gallery">
+	<div class="container">
+		<h3>Gallery</h3>
+		<div class="gallery-top">
+			<ul id="filters" class="clearfix">
+				<li><span class="filter active" data-filter="app card icon logo web">1</span></li>
+				<li><span class="filter" data-filter="app">2</span></li>
+				<li><span class="filter" data-filter="card">3</span></li>
+				<li><span class="filter" data-filter="icon">4</span></li>
+			</ul>
+			<div id="portfoliolist" class="clearfix">
+				<div class="portfolio app mix_all" data-cat="app">
+					<div class="portfolio-wrapper">
+						<a href="index.html" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/pic4.jpg" />
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left b-delay03 "></h2>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="portfolio icon mix_all" data-cat="icon">
+					<div class="portfolio-wrapper">
+						<a href="index.html" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/pic2.jpg" />
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left b-delay03 "></h2>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="portfolio card mix_all" data-cat="card">
+					<div class="portfolio-wrapper">
+						<a href="index.html" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/pic3.jpg" />
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left b-delay03 "></h2>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="portfolio logos mix_all" data-cat="logo">
+					<div class="portfolio-wrapper">
+						<a href="index.html" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/pic1.jpeg" />
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left b-delay03 "></h2>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="portfolio card mix_all" data-cat="card">
+					<div class="portfolio-wrapper">
+						<a href="index.html" class="b-link-stripe b-animate-go thickbox">
+							<img src="images/pic5.jpg" />
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left b-delay03 "></h2>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Gallery Ends Here -->
+<!-- Video Part starts Here -->
+<!-- ... previous code ... -->
+
+<!-- Video Part starts Here -->
+<div class="video-serch">
+	<div class="container">
+	  <div class="row">
+		<div class="col-12 col-md-6 col-lg-6 vid-col">
+		  <p style="font-family: American Typewriter, serif;font-weight:bold ;" >"Welcome to Assassin's Creed Mirage, an extraordinary journey into a captivating world of mystery and adventure. Set in a mesmerizing desert landscape, Assassin's Creed Mirage delves into a unique chapter of the Assassin's Creed universe. Immerse yourself in a tale of ancient secrets, hidden civilizations, and enigmatic characters. Traverse the vast and breathtaking dunes as you master the art of stealth and engage in exhilarating combat. Uncover the truth behind the Mirage, a mythical artifact that holds immense power and holds the key to rewriting history."</p>
+		  <div class="more">
+			<a href="#">See more videos</a>
+		  </div>
+		</div>
+  
+		<div class="col-12 col-md-6 col-lg-6 vid-coll">
+		  <div class="videoWrapper">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/9hjico7nYvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		  </div>
+		</div>
+		<div class="clearfix"></div>
+	  </div>
+	</div>
+  </div>
+  <!-- Video Part Ends Here -->
+  
+  <!-- What New Part starts Here -->
+  <div class="what-new">
+	<div class="container-fluid">
+	  <h3>What's new</h3>
+	  <div class="row">
+		<div class="col-12 col-lg-6">
+		  <div class="videoWrapper">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mxpYHW-M_Ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		  </div>
+		</div>
+		<div class="col-12 col-lg-6">
+		  <div class="videoWrapper">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jG3bhVQSSGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div>
+		<p>Assassin's Creed Mirage is an upcoming action-adventure game developed by Ubisoft Bordeaux and published by Ubisoft. It will be the thirteenth major installment in the Assassin's Creed series and the successor to 2020's Assassin's Creed Valhalla. Principally set in 9th-century Baghdad during the anarchy at Samarra, the game will follow Basim Ibn Ishaq (a character first introduced in Valhalla) and his transition from street thief to fully-fledged member of the Assassin Brotherhood, who fight for peace and liberty, against the Templar Order, who desire peace through control. The game has been described as a return to the series' roots, with a bigger focus on linear storytelling and stealth gameplay than more recent installments, which primarily focused on role-playing and open-world elements.</p>
+	  </div>
+	  <div class="row">
+		<img src="https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/B2sAptW8SXYjuHvSsIt80/9fe19578f42394db282ad16215168664/acm-homepage-header-img1920x1080.jpg" alt="">
+	  </div>
+	</div>
+  </div>
+  
+  <!-- ... remaining code ... -->
+  
+
+
+<!-- What New Part Endss Here -->
+<!-- Footer Starts Here -->
+<div class="footer">
+	<div class="container">
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="fb"></i></li>
+			<li><i class="fc"></i></li>
+		</ul>
+		<p>&copy; 2023 Gaming Blog. All Rights Reserved. Design by Abhishek Kumar A</p>
+	</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Footer Ends Here -->
+</body>
+</html>
